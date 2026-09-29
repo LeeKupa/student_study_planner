@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Student Study Planner</h1>
+      <p class="subtitle">Organize your studies, beat your deadlines.</p>
+    </header>
+
+    <section class="task-form">
+      <h2>Add a Study Task</h2>
+      <form id="task-form">
+        <input type="text" id="task-title" placeholder="Task title (e.g. Chapter 3 review)" required />
+        <input type="text" id="task-subject" placeholder="Subject (e.g. Biology)" required />
+        <input type="date" id="task-deadline" required />
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Upcoming Tasks</h2>
+      <ul id="task-list"></ul>
+      <p id="empty-msg" class="empty">No tasks yet. Add one above 👆</p>
+    </section>
+
+    <section class="tasks-section">
+      <h2>Completed Tasks</h2>
+      <ul id="completed-list"></ul>
+      <p id="empty-completed" class="empty">Nothing completed yet.</p>
+    </section>
+
+    <button id="clear-all" class="danger">Clear All Tasks</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
